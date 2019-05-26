@@ -1,6 +1,6 @@
 import json
 import codecs
-from json_reading_writing import*
+from flask_glucu.json_reading_writing import*
 
 
 def add_user(a_dict):
