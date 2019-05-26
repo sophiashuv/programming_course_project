@@ -1,6 +1,6 @@
 import json
 import codecs
-from json_reading_writing import*
+from scripts.json_reading_writing import*
 
 class User:
     def __init__(self):
