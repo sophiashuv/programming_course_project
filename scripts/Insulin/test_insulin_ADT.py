@@ -1,6 +1,6 @@
 import unittest
-from insulin_ADT import Insulin
-from find_in_base import *
+from scripts.Insulin.insulin_ADT import Insulin
+from flask_glucu.database_search import *
 
 
 class InsulinTest(unittest.TestCase):
