@@ -1,6 +1,6 @@
 import codecs
 from scripts.User.add_user import*
-from scripts.json_reading_writing import*
+from flask_glucu.json_reading_writing import*
 
 
 def add_inf(filename):
