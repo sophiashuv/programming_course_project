@@ -1,6 +1,6 @@
-from database_search import*
+from flask_glucu.database_search import*
 import matplotlib.patheffects as path_effects
-from add import *
+from flask_glucu.add import *
 import matplotlib.pyplot as plt
 import numpy as np
 
