@@ -1,6 +1,6 @@
 import codecs
 from add_user import*
-from json_reading_writing import*
+from scripts.json_reading_writing import*
 
 
 def add_inf(filename):
