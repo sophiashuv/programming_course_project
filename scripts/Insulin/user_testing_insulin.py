@@ -1,5 +1,5 @@
 from insulin_ADT import Insulin
-from json_reading_writing import*
+from flask_glucu.json_reading_writing import*
 import json
 import codecs
 
