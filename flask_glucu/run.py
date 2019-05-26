@@ -87,7 +87,7 @@ def add_to_base():
     user['name'] = request.form.get('name')
     user['surname'] = request.form.get('surname')
     user['login'] = request.form.get('login')
-    user['password'] = request.form.get('password')
+    user['password'] = str(request.form.get('password'))
     user['tel_number'] = request.form.get('tel_number')
     user['country'] = request.form.get('country')
     user['city'] = request.form.get('city')

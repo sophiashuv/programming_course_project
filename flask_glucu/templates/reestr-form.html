@@ -1,190 +1,289 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Реєстрація</title>
-<style>
-.signup {
-border: 1px solid #e88484;
-font: normal 20px verdana;
-color:#ffffff;
-}
-</style>
-<script>
-function validate(form) {
-fail = validateForename(form.name.value)
-fail += validateSurname(form.surname.value)
-fail += validateUsername(form.login.value)
-fail += validatePassword(form.password.value)
-fail += validateAge(form.tel_number.value)
-fail += validateAge(form.country.value)
-fail += validateAge(form.city.value)
-fail += validateAge(form.address.value)
-fail += validateAge(form.email.value)
-fail += validateAge(form.sex.value)
-fail += validateAge(form.age.value)
-fail += validateAge(form.date_of_birth.value)
-fail += validateAge(form.height.value)
-fail += validateAge(form.weight.value)
-fail += validateAge(form.type_of_diabet.value)
-fail += validateAge(form.physical_activity.value)
-fail += validateAge(form.type_of_short_act_insulin.value)
-fail += validateAge(form.type_of_long_act_insulin.value)
-fail += validateAge(form.normal_level_of_shugar.value)
-fail += validateAge(form.XO)
-fail += validateAge(form.doctor.value)
-fail += validateAge(form.doctor_email.value)
-fail += validateAge(form.doctor_tel.value)
-if (fail == "") return true
-else { alert(fail); return false }
-}
-</script>
+    <meta charset="utf-8">
+    <title>Реєстрація</title>
+    <style>
+        .signup {
+            border: 1px solid #e88484;
+            font: normal 20px verdana;
+            color: #ffffff;
+        }
+
+    </style>
+    <script>
+        function validate(form) {
+            fail = validateForename(form.name.value);
+            fail += validateSurname(form.surname.value);
+            fail += validateUsername(form.login.value);
+            fail += validatePassword(form.password.value);
+            fail += validateAge(form.tel_number.value);
+            fail += validateAge(form.country.value);
+            fail += validateAge(form.city.value);
+            fail += validateAge(form.address.value);
+            fail += validateAge(form.email.value);
+            fail += validateAge(form.sex.value);
+            fail += validateAge(form.age.value);
+            fail += validateAge(form.date_of_birth.value);
+            fail += validateAge(form.height.value);
+            fail += validateAge(form.weight.value);
+            fail += validateAge(form.type_of_diabet.value);
+            fail += validateAge(form.physical_activity.value);
+            fail += validateAge(form.type_of_short_act_insulin.value);
+            fail += validateAge(form.type_of_long_act_insulin.value);
+            fail += validateAge(form.normal_level_of_shugar.value);
+            fail += validateAge(form.XO);
+            fail += validateAge(form.doctor.value);
+            fail += validateAge(form.doctor_email.value);
+            fail += validateAge(form.doctor_tel.value);
+            if (fail == "") return true;
+            else {
+                alert(fail);
+                return false
+            }
+        }
+    </script>
 </head>
 <style>
-.button {
-  background-color: #669ea0; /* Green */
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-family: verdana;
-  font-size: 14px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
+    .button {
+        background-color: #669ea0; /* Green */
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family: verdana;
+        font-size: 14px;
+        margin: 4px 2px;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
 
-.button1 {
-  background-color: white;
-  color: black;
-  border: 2px solid #669ea0;
-}
-.button1:hover {
-  background-color: #669ea0;
-  color: white;
-}
+    .button1 {
+        background-color: white;
+        color: black;
+        border: 2px solid #669ea0;
+    }
+
+    .button1:hover {
+        background-color: #669ea0;
+        color: white;
+    }
 
 </style>
-<body background="/static/images/GLUCU%20копія.png" >
+<body background="/static/images/GLUCU%20копія.png">
 
-     <table border="0" cellpadding="0" cellspacing="0"
-            align="center">
+<table border="0" cellpadding="0" cellspacing="0"
+       align="center">
 
-     <tr>
-	 
-       <td  colspan="2" width="780" height="165"
+    <tr>
+
+        <td colspan="2" width="780" height="165"
             background="/static/images/header.png">
-		</td>
-     </tr>
+        </td>
+    </tr>
 
-     <tr>
-       <td  colspan="2" width="780" height="38">
+    <tr>
+        <td colspan="2" width="780" height="38">
 
-          <table border="0"  cellpadding="5" cellspacing="0">
-               <tr><td>
+            <table border="0" cellpadding="5" cellspacing="0">
+                <tr>
+                    <td>
 
 
-                 <font  color="#FFFFFF" size="5">
+                        <font color="#FFFFFF" size="5">
 
-                   <a class="button" href="index.html"> Головна </a>
+                            <a class="button" href="index.html"> Головна </a>
 
-                     <a class="button" href="login.html"> Моя сторінка  </a>
+                            <a class="button" href="login.html"> Моя сторінка </a>
 
-				   <a class="button" href="reestr-form.html"> Реєстрація </a>
+                            <a class="button" href="reestr-form.html"> Реєстрація </a>
 
-				   <a class="button" href="help.html"> Допомога </a>
+                            <a class="button" href="help.html"> Допомога </a>
 
-				   <a class="button" href="contact.html"> Контакти</a>
+                            <a class="button" href="contact.html"> Контакти</a>
 
-                 </font>
-               </td></tr>
-          </table>
+                        </font>
+                    </td>
+                </tr>
+            </table>
 
-       </td>
-     </tr>
-     <tr>
-       <td  colspan="2" width="780" height="33">
-	   </td>
-     </tr>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" width="780" height="33">
+        </td>
+    </tr>
 
-     <tr>
-       <td width="200" height="320" bgcolor="#7cbfc1"
-           valign="top">
+    <tr>
+        <td width="200" height="320" bgcolor="#7cbfc1"
+            valign="top">
 
-         <table border="0"  cellpadding="15" cellspacing="0">
-               <tr><td>
-		<br>
+            <table border="0" cellpadding="15" cellspacing="0">
+                <tr>
+                    <td>
+                        <br>
 
-		<br>
-              </td></tr>
-         </table>	
-          
-       </td>
-       <td width="580" height="320" bgcolor="#e88484"
-           valign="top">
+                        <br>
+                    </td>
+                </tr>
+            </table>
 
-        <table border="0"  cellpadding="15" cellspacing="0">
-         <tr><td>
+        </td>
+        <td width="580" height="320" bgcolor="#e88484"
+            valign="top">
 
- <style>
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}</style>
-<table class="signup" border="0" cellpadding="2" cellspacing="6" bgcolor="#e88484">
-<th colspan="2" align="center">Реєстраційна форма</th>
-<form method="post" action="adduser" onSubmit="return validate(this)">
-<tr><td>Ім'я *</td><td><input type="text" maxlength="32" name="name" placeholder="Введіть ім'я" required></td></tr>
-<tr><td>Прізвище *</td><td><input type="text" maxlength="32" name="surname" placeholder="Введіть прізвище" required></td></tr>
-<tr><td>Користувач *</td><td><input type="text" maxlength="16" name="login" placeholder="Введіть логін"required></td></tr>
-<tr><td>Пароль *</td><td><input type="password" placeholder="Введіть пароль" name="password" required></td></tr>
-<tr><td>Номер телефону</td><td><input type="text" maxlength="15" placeholder="Введіть номер телефону" name="tel_number"></td></tr>
-<tr><td>Країна</td><td><input type="text" maxlength="15" placeholder="Введіть країну" name="country"></td></tr>
-<tr><td>Місто</td><td><input type="text" maxlength="20" placeholder="Введіть місто" name="city"></td></tr>
-<tr><td>Адреса</td><td><input type="text" maxlength="30" placeholder="Введіть адресу " name="address"></td></tr>
-<tr><td>Електронна адреса</td><td><input type="text" maxlength="25" placeholder="Введіть електоронну адресу" name="email"></td></tr>
-<tr><td>Стать</td><td><input type="text" maxlength="15" placeholder="Введіть стать" name="sex"></td></tr>
-<tr><td>Вік</td><td><input type="text" maxlength="3" placeholder="Введіть вік" name="age"></td></tr>
-<tr><td>Дата народження</td><td><input type="text" maxlength="15" placeholder="Введіть дату народження" name="date_of_birth"></td></tr>
-<tr><td>Ріст</td><td><input type="text" maxlength="5" placeholder="Введіть ріст" name="height"></td></tr>
-<tr><td>Вага</td><td><input type="text" maxlength="5" placeholder="Введіть вагу" name="weight"></td></tr>
-<tr><td>Тип діабету</td><td><input type="text" maxlength="5" placeholder="Введіть тип діабету" name="type_of_diabet"></td></tr>
-<tr><td>Активність</td><td><input type="text" maxlength="12" placeholder="Введіть фіз-активность " name="physical_activity"></td></tr>
-<tr><td>Вид інсуліну короткої дії</td><td><input type="text" maxlength="12" placeholder="Введіть інсулін короткої дії" name="type_of_short_act_insulin"></td></tr>
-<tr><td>Вид інсуліну довгої дії</td><td><input type="text" maxlength="24" placeholder="Введіть інсулін довгої дії"name="type_of_long_act_insulin"></td></tr>
-<tr><td>Нормальний рівень цукру</td><td><input type="text" maxlength="24" placeholder="Введіть нормальний рівень цукру" name="normal_level_of_shugar"></td></tr>
-<tr><td>Денна норма хлібних одиниць</td><td><input type="text" maxlength="24" placeholder="Введіть норму ХО на день" name="XO"></td></tr>
-<tr><td>Лікар</td><td><input type="text" maxlength="7" placeholder="Введіть ім'я лікаря" name="doctor"></td></tr>
-<tr><td>Електронна адреса лікаря</td><td><input type="text" maxlength="15" placeholder="Введіть електронну адресу лікаря" name="doctor_email"></td></tr>
-<tr><td>Телефон лікаря</td><td><input type="text" maxlength="25" placeholder="Введіть телефон лікаря" name="doctor_tel"></td></tr>
+            <table border="0" cellpadding="15" cellspacing="0">
+                <tr>
+                    <td>
 
-         </td></tr>
-        </table>
-       </td>
-     </tr>
+                        <style>
+                            input[type=text], input[type=password] {
+                                width: 100%;
+                                padding: 15px;
+                                margin: 5px 0 22px 0;
+                                display: inline-block;
+                                border: none;
+                                background: #f1f1f1;
+                            }</style>
+                        <table class="signup" border="0" cellpadding="2" cellspacing="6" bgcolor="#e88484">
+                            <th colspan="2" align="center">Реєстраційна форма</th>
+                            <form method="post" action="adduser" onSubmit="return validate(this)">
+                                <tr>
+                                    <td>Ім'я *</td>
+                                    <td><input type="text" maxlength="32" name="name" placeholder="Введіть ім'я"
+                                               required></td>
+                                </tr>
+                                <tr>
+                                    <td>Прізвище *</td>
+                                    <td><input type="text" maxlength="32" name="surname" placeholder="Введіть прізвище"
+                                               required></td>
+                                </tr>
+                                <tr>
+                                    <td>Користувач *</td>
+                                    <td><input type="text" maxlength="16" name="login" placeholder="Введіть логін"
+                                               required></td>
+                                </tr>
+                                <tr>
+                                    <td>Пароль *</td>
+                                    <td><input type="password" placeholder="Введіть пароль" name="password" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Номер телефону</td>
+                                    <td><input type="text" maxlength="15" placeholder="Введіть номер телефону"
+                                               name="tel_number"></td>
+                                </tr>
+                                <tr>
+                                    <td>Країна</td>
+                                    <td><input type="text" maxlength="15" placeholder="Введіть країну" name="country">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Місто</td>
+                                    <td><input type="text" maxlength="20" placeholder="Введіть місто" name="city"></td>
+                                </tr>
+                                <tr>
+                                    <td>Адреса</td>
+                                    <td><input type="text" maxlength="30" placeholder="Введіть адресу " name="address">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Електронна адреса</td>
+                                    <td><input type="text" maxlength="25" placeholder="Введіть електоронну адресу"
+                                               name="email"></td>
+                                </tr>
+                                <tr>
+                                    <td>Стать</td>
+                                    <td><input type="text" maxlength="15" placeholder="Введіть стать" name="sex"></td>
+                                </tr>
+                                <tr>
+                                    <td>Вік</td>
+                                    <td><input type="text" maxlength="3" placeholder="Введіть вік" name="age"></td>
+                                </tr>
+                                <tr>
+                                    <td>Дата народження</td>
+                                    <td><input type="text" maxlength="15" placeholder="Введіть дату народження"
+                                               name="date_of_birth"></td>
+                                </tr>
+                                <tr>
+                                    <td>Ріст</td>
+                                    <td><input type="text" maxlength="5" placeholder="Введіть ріст" name="height"></td>
+                                </tr>
+                                <tr>
+                                    <td>Вага</td>
+                                    <td><input type="text" maxlength="5" placeholder="Введіть вагу" name="weight"></td>
+                                </tr>
+                                <tr>
+                                    <td>Тип діабету</td>
+                                    <td><input type="text" maxlength="5" placeholder="Введіть тип діабету"
+                                               name="type_of_diabet"></td>
+                                </tr>
+                                <tr>
+                                    <td>Активність</td>
+                                    <td><input type="text" maxlength="12" placeholder="Введіть фіз-активность "
+                                               name="physical_activity"></td>
+                                </tr>
+                                <tr>
+                                    <td>Вид інсуліну короткої дії</td>
+                                    <td><input type="text" maxlength="12" placeholder="Введіть інсулін короткої дії"
+                                               name="type_of_short_act_insulin"></td>
+                                </tr>
+                                <tr>
+                                    <td>Вид інсуліну довгої дії</td>
+                                    <td><input type="text" maxlength="24" placeholder="Введіть інсулін довгої дії"
+                                               name="type_of_long_act_insulin"></td>
+                                </tr>
+                                <tr>
+                                    <td>Нормальний рівень цукру</td>
+                                    <td><input type="text" maxlength="24" placeholder="Введіть нормальний рівень цукру"
+                                               name="normal_level_of_shugar"></td>
+                                </tr>
+                                <tr>
+                                    <td>Денна норма хлібних одиниць</td>
+                                    <td><input type="text" maxlength="24" placeholder="Введіть норму ХО на день"
+                                               name="XO"></td>
+                                </tr>
+                                <tr>
+                                    <td>Лікар</td>
+                                    <td><input type="text" maxlength="7" placeholder="Введіть ім'я лікаря"
+                                               name="doctor"></td>
+                                </tr>
+                                <tr>
+                                    <td>Електронна адреса лікаря</td>
+                                    <td><input type="text" maxlength="15" placeholder="Введіть електронну адресу лікаря"
+                                               name="doctor_email"></td>
+                                </tr>
+                                <tr>
+                                    <td>Телефон лікаря</td>
+                                    <td><input type="text" maxlength="25" placeholder="Введіть телефон лікаря"
+                                               name="doctor_tel"></td>
+                                </tr>
 
-<tr><td colspan="2" align="center">
+                                </td></tr>
+                        </table>
+                    </td>
+                </tr>
 
-<input type="submit" class="button button1" value="Зареєструватись"></td></tr>
+                <tr>
+                    <td colspan="2" align="center">
 
-</form>
+                        <input type="submit" class="button button1" value="Зареєструватись"></td>
+                </tr>
+
+                </form>
+            </table>
+
+    <tr>
+        <td colspan="2" width="780" height="38"
+        ">
+        GLUCU Copyright © 2019
+        </td>
+    </tr>
+
 </table>
-
-     <tr>
-       <td  colspan="2" width="780" height="38"
-            ">
-    GLUCU Copyright © 2019
-       </td>
-     </tr>
-
-    </table>
 
 </body>
 </html>

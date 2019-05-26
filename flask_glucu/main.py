@@ -151,6 +151,7 @@ def daily_diagram(login):
     plt.yticks(color='#873600')
     plt.xlabel(date, fontweight='bold', color='#D35400')
     plt.savefig('static/images/daily.png')
+    plt.close()
 
 
 def weekly_diagram(login):
@@ -159,7 +160,7 @@ def weekly_diagram(login):
     """
     size, names = count_mid_week(login)
     np = []
-    for i in range(7):
+    for i in range(min(7, len(size))):
         np.append((str(round(size[i], 2)) + "\n"+names[i]))
     fig = plt.figure()
     fig.patch.set_facecolor('white')
@@ -170,4 +171,5 @@ def weekly_diagram(login):
     p = plt.gcf()
     p.gca().add_artist(my_circle)
     plt.savefig('static/images/weekly.png')
+    plt.close()
 

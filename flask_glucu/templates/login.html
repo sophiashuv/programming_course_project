@@ -1,158 +1,154 @@
 <!DOCTYPE html>
-   <head>
-	<meta charset="utf-8">
-      <title> Моя сторінка </title>
+<head>
+    <meta charset="utf-8">
+    <title> Моя сторінка </title>
 
-   </head>
+</head>
 <style>
-.button {
-  background-color: #669ea0; /* Green */
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  font-family: verdana;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
+    .button {
+        background-color: #669ea0; /* Green */
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        font-family: verdana;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 4px 2px;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
 
-.button1 {
-  background-color: white;
-  color: black;
-  border: 2px solid #669ea0;
-}
-.button1:hover {
-  background-color: #669ea0;
-  color: white;
-}
+    .button1 {
+        background-color: white;
+        color: black;
+        border: 2px solid #669ea0;
+    }
+
+    .button1:hover {
+        background-color: #669ea0;
+        color: white;
+    }
 
 </style>
-   <body background="/static/images/GLUCU%20копія.png" >
+<body background="/static/images/GLUCU%20копія.png">
 
 
+<table border="0" cellpadding="0" cellspacing="0"
 
-     <table border="0" cellpadding="0" cellspacing="0"
-
-            align="center">
-
+       align="center">
 
 
-     <tr>
+    <tr>
 
-	 
 
-       <td  colspan="2" width="780" height="165"
+        <td colspan="2" width="780" height="165"
 
             background="/static/images/header.png">
 
-		</td>
+        </td>
 
-     </tr>
-
-
-
-     <tr>
-
-       <td  colspan="2" width="780" height="38">
+    </tr>
 
 
+    <tr>
 
-          <table border="0"  cellpadding="5" cellspacing="0">
-
-               <tr><td>
-
-
-                 <font  color="#FFFFFF" size="5">
-
-                   <a class="button" href="index.html"> Головна </a>
-
-				   <a class="button" href="login.html"> Моя сторінка  </a>
-
-				   <a class="button" href="reestr-form.html"> Реєстрація </a>
-
-				   <a class="button" href="help.html"> Допомога </a>
-
-				   <a class="button" href="contact.html"> Контакти</a>
-
-                 </font>
-
-               </td></tr>
-
-          </table>
+        <td colspan="2" width="780" height="38">
 
 
+            <table border="0" cellpadding="5" cellspacing="0">
 
-       </td>
-
-     </tr>
-
-     <tr>
-
-       <td  colspan="2" width="780" height="33">
+                <tr>
+                    <td>
 
 
-	   </td>
+                        <font color="#FFFFFF" size="5">
 
-     </tr>
+                            <a class="button" href="index.html"> Головна </a>
 
+                            <a class="button" href="login.html"> Моя сторінка </a>
 
+                            <a class="button" href="reestr-form.html"> Реєстрація </a>
 
-     <tr>
+                            <a class="button" href="help.html"> Допомога </a>
 
-       <td width="200" height="320" bgcolor="#ef888d"
+                            <a class="button" href="contact.html"> Контакти</a>
 
-           valign="top">
+                        </font>
 
+                    </td>
+                </tr>
 
-
-         <table border="0"  cellpadding="10" cellspacing="0">
-
-               <tr><td>
-
-		<br>
-
+            </table>
 
 
-		<br>
+        </td>
 
-              </td></tr>
+    </tr>
 
-         </table>
+    <tr>
 
-          
-
-       </td>
-
-       <td width="580" height="320" bgcolor="#FFFFFF"
-
-           valign="top">
+        <td colspan="2" width="780" height="33">
 
 
+        </td>
 
-        <table border="0"  cellpadding="15" cellspacing="0">
+    </tr>
 
-         <tr><td>
 
-         <style>
-        h1 {
-          color: #e88484;
-          font-family: verdana;
-          font-size: 150%;
+    <tr>
 
-        }
-        p  {
-          color: #669ea0;
-          font-family: verdana;
-          font-size: 110%;
-        }
-        </style>
-           <p>
-		   <?php
+        <td width="200" height="320" bgcolor="#ef888d"
+
+            valign="top">
+
+
+            <table border="0" cellpadding="10" cellspacing="0">
+
+                <tr>
+                    <td>
+
+                        <br>
+
+
+                        <br>
+
+                    </td>
+                </tr>
+
+            </table>
+
+
+        </td>
+
+        <td width="580" height="320" bgcolor="#FFFFFF"
+
+            valign="top">
+
+
+            <table border="0" cellpadding="15" cellspacing="0">
+
+                <tr>
+                    <td>
+
+                        <style>
+                            h1 {
+                                color: #e88484;
+                                font-family: verdana;
+                                font-size: 150%;
+
+                            }
+
+                            p {
+                                color: #669ea0;
+                                font-family: verdana;
+                                font-size: 110%;
+                            }
+                        </style>
+                        <p>
+                            <?php
 
 if (isset($_POST['login']) && isset($_POST['psw']) && $_POST['login'] = "user" &&  $_POST['login'] = "123")
 {
@@ -160,67 +156,68 @@ if (isset($_POST['login']) && isset($_POST['psw']) && $_POST['login'] = "user" &
 
 }
 ?>
-       <style>
-input[type=text], input[type=password] {
-  width: 80%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-             </style>
-<form method="post" action="logged" action ="redirect" onSubmit="return validate(this)">
-  <div class="container">
-    <h1>Зайти на мою сторінку: </h1>
-<p>
-    <label for="login"><b>Логін: </b></label>
-    <input type="text" placeholder="Введіть логін" name="login" required>
-</p>
-</br>
+                            <style>
+                                input[type=text], input[type=password] {
+                                    width: 80%;
+                                    padding: 15px;
+                                    margin: 5px 0 22px 0;
+                                    display: inline-block;
+                                    border: none;
+                                    background: #f1f1f1;
+                                }
+                            </style>
+                            <form method="post" action="logged" action="redirect" onSubmit="return validate(this)">
+                                <div class="container">
+                                    <h1>Зайти на мою сторінку: </h1>
+                        <p>
+                            <label for="login"><b>Логін: </b></label>
+                            <input type="text" placeholder="Введіть логін" name="login" required>
+                        </p>
+                        </br>
 
-<p>
-    <label for="psw"><b>Пароль: </b></label>
-    <input type="password" placeholder="Введіть пароль" name="psw" required>
+                        <p>
+                            <label for="psw"><b>Пароль: </b></label>
+                            <input type="password" placeholder="Введіть пароль" name="psw" required>
 
-</br>
-</p>
+                            </br>
+                        </p>
 
-    <button type="submit" class="button button1">Увійти</button>
-  </div>
+                        <button type="submit" class="button button1">Увійти</button>
+                        </div>
 
-  <div class="container signin">
-    <p>Ще не зареєстровані? <a href="redirect">Register</a>.</p>
-  </div>
-</form>
-		   
-		   </p>
+                        <div class="container signin">
+                            <p>Ще не зареєстровані? <a href="redirect">Register</a>.</p>
+                        </div>
+                        </form>
+
+                        </p>
 
 
-         </td></tr>
+                    </td>
+                </tr>
 
-        </table>
+            </table>
 
-       
-       </td>
 
-     </tr>
+        </td>
 
-     <tr>
+    </tr>
 
-       <td  colspan="2" width="780" height="38"
+    <tr>
+
+        <td colspan="2" width="780" height="38"
             align="right">
 
-   GLUCU Copyright © 2019
+            GLUCU Copyright © 2019
 
-       </td>
+        </td>
 
-     </tr>
+    </tr>
 
-    </table>
+</table>
 
 
-   </body>
+</body>
 
 
 </html>
