@@ -1,5 +1,5 @@
 import codecs
-from add_user import*
+from scripts.User.add_user import*
 from scripts.json_reading_writing import*
 
 
