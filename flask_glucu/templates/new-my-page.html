@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+
+   <head>
+	<meta charset="utf-8">
+      <title> Моя сторінка </title>
+
+   </head>
+
+  <body background="/static/images/GLUCU%20копія.png" >
+
+     <table border="0" cellpadding="0" cellspacing="0"
+            align="center">
+
+     <tr>
+	 
+       <td  colspan="2" width="780" height="165"
+           background="/static/images/header.png">
+	</td>
+     </tr>
+
+     <tr>
+       <td  colspan="2" width="780" height="38"
+            background="images/menu.jpg">
+
+          <table border="0"  cellpadding="5" cellspacing="0">
+               <tr><td>
+                 <font  color="#FFFFFF" size="5">
+                   <a href="index.html"> Головна ||</a>
+				   <a href="my-page.html"> Моя сторінка || </a>
+				   <a href="reestr-form.html"> Реєстрація ||</a>
+				   <a href="help.html"> Допомога ||</a>
+				   <a href="contact.html"> Контакти</a>
+                 </font>
+               </td></tr>
+          </table>
+
+       </td>
+     </tr>
+
+     <tr>
+       <td  colspan="2" width="780" height="33"
+            background="images/news.jpg">
+		</br>
+
+		Софія Шувар
+		<p> </p>
+		</br>
+	   </td>
+	   
+     </tr>
+
+     <tr>
+       <td width="200" height="320" bgcolor="#7cbfc1"
+           valign="top">
+
+    <table border="0"  cellpadding="10" cellspacing="0">
+               <tr><td>
+		<br>
+
+	<p><strong>Дата</strong></p>
+	<p><input maxlength="15" size="30" value="дата"></p>
+	<p><strong>Час</strong></p>
+	<p><input maxlength="15" size="30" value="час"></p>
+ <br>
+<br>
+<br>
+<br>
+<br> 
+
+
+
+	<form>
+		<p><input type="submit" value=" Зберегти "></p>
+	</form>
+	 
+			  </td></tr>
+     </table>
+          
+       </td>
+      <td width="580" height="320" bgcolor="#FFFFFF"
+           valign="top">
+
+     <table border="0"  cellpadding="15" cellspacing="0">
+         <tr><td>
+ <form action="handler.php">
+  <p><b>Рівень цукру</b></p>
+  <p><textarea cols="40" rows="2" wrap="physical"></textarea></p>
+<hr align="left" width="500" size="3" color="#ff9900" />
+          <table border="0"  cellpadding="5" cellspacing="0">
+               <tr>
+			   
+			   <td>
+<form method="post" action="save" onSubmit="return validate(this)">
+    </form>
+<form action="handler.php">
+     </form>
+  <p><b>Страви2</b></p>
+  <p><textarea cols="40" rows="14" wrap="physical"></textarea></p>
+               </td>
+			   </tr>
+          </table>
+		 </td></tr>
+     </table>
+        
+       </td>
+     </tr>
+
+     <tr>
+       <td  colspan="2" width="780" height="38"
+            background="images/footer.jpg" align="right">
+    GLUCU Copyright © 2019
+       </td>
+     </tr>
+
+    </table>
+
+   </body>
+
+</html>
