@@ -1,4 +1,4 @@
-from flasc_glucu.database_search import found_in_database
+from flask_glucu.database_search import found_in_database
 from  product_ADT import Product
 if __name__ == '__main__':
 
