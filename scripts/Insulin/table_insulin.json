@@ -1,0 +1,69 @@
+[{"Type of Insulin & Brand Names":"Lispro (Humalog)",
+  "Onset":"15-30 min.",
+  "Peak":"30-90 min",
+  "Duration":"3-5 hours"},
+
+  {"Type of Insulin & Brand Names":"Aspart (Novolog)",
+    "Onset":"10-20 min.",
+    "Peak":"40-50 min.",
+    "Duration":"3-5 hours"},
+
+  {"Type of Insulin & Brand Names":"Glulisine (Apidra)",
+    "Onset":"20-30 min.",
+    "Peak":"30-90 min.",
+    "Duration":"1-2 1\/2 hours"},
+
+  {"Type of Insulin & Brand Names":"Regular (R)  or novolin",
+    "Onset":"30 min. -1 hour",
+    "Peak":"2-5 hours",
+    "Duration":"5-8 hours"},
+
+  {"Type of Insulin & Brand Names":"Velosulin (for use in the insulin pump)",
+    "Onset":"30 min.-1 hour",
+    "Peak":"1-2 hours",
+    "Duration":"2-3 hours"},
+
+  {"Type of Insulin & Brand Names":"NPH (N)",
+    "Onset":"1-2 hours",
+    "Peak":"4-12 hours",
+    "Duration":"18-24 hours"},
+
+  {"Type of Insulin & Brand Names":"Insulin glargine (Basaglar, Lantus, Toujeo)",
+    "Onset":"1-1 1\/2 hours",
+    "Peak":"No peak time. Insulin is delivered at a steady level.",
+    "Duration":"20-24 hours"},
+
+  {"Type of Insulin & Brand Names":"Insulin detemir (Levemir)",
+    "Onset":"1-2 hours",
+    "Peak":"6-8 hours",
+    "Duration":"Up to 24 hours"},
+
+  {"Type of Insulin & Brand Names":"Insulin degludec (Tresiba)",
+    "Onset":"30-90 min.",
+    "Peak":"No peak time",
+    "Duration":"42 hours"},
+
+  {"Type of Insulin & Brand Names":"Humulin ",
+    "Onset":"30 min.",
+    "Peak":"2-4 hours",
+    "Duration":"14-24 hours"},
+
+  {"Type of Insulin & Brand Names":"Novolin ",
+    "Onset":"30 min.",
+    "Peak":"2-12 hours",
+    "Duration":"Up to 24 hours"},
+
+  {"Type of Insulin & Brand Names":"Novolog ",
+    "Onset":"10-20 min.",
+    "Peak":"1-4 hours",
+    "Duration":"Up to 24 hours"},
+
+  {"Type of Insulin & Brand Names":"Humulin ",
+    "Onset":"30 min.",
+    "Peak":"2-5 hours",
+    "Duration":"18-24 hours"},
+
+  {"Type of Insulin & Brand Names":"Humalog mix ",
+    "Onset":"15 min.",
+    "Peak":"30 min.-2 1\/2 hours",
+    "Duration":"16-20 hours"}]
