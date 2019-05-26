@@ -1,7 +1,7 @@
 import requests
 import lxml.html as lh
 import pandas as pd
-from json_working import*
+from flask_glucu.json_reading_writing import*
 
 
 def scrap_site(url):
