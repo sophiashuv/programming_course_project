@@ -1,6 +1,6 @@
 import unittest
 from product import Product
-from database_search import *
+from flask_glucu.database_search import *
 
 
 class ProductTest(unittest.TestCase):
