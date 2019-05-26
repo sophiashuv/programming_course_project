@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, session
-from main import *
+from flask_glucu.main import *
 app = Flask(__name__, template_folder="templates", static_folder='static')
 app.secret_key = 'super secret key'
 
