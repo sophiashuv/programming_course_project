@@ -1,5 +1,5 @@
 from flask_glucu.database_search import found_in_database
-from  product_ADT import Product
+from  scripts.Producrs.product_ADT import Product
 if __name__ == '__main__':
 
     baguet = found_in_database('ru_bread_items.json', 'багет')
