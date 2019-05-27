@@ -61,7 +61,7 @@ def food_preferenses(login, product, food_amount, date):
         gramm_in_xo = float(found_in_database("ru_bread_items.json".replace(',', '.'),
                                               products[num_of_food])["1 ХO є в граммах продукта"
                                                                      " (новий розрах)"].replace(',', '.'))
-        eaten += float(food_amounts[num_of_food])/gramm_in_xo
+        eaten += round(float(food_amounts[num_of_food])/gramm_in_xo, 2)
     available = float(search_user(login)['XO'].replace(',', '.')) - eaten
     return[available, eaten]
 
