@@ -1,3 +1,8 @@
+
+
+ ## [Watch video description by cklick on this link ](https://youtu.be/7VAOEVAKvGg "Watch video description")
+
+
 # programming_course_project
 
 
@@ -29,7 +34,12 @@ for people with diabetes into automatic process.
 * matplotlib as plt
 * codecs
 * numpy as np
-
+* from flask import Flask, render_template, request, session
+* codecs
+* from translate import Translator
+* import numpy as np
+* import matplotlib.pyplot as plt
+* import matplotlib.patheffects as path_effects
 
 
 ## Usage:
