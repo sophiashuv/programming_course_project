@@ -54,7 +54,10 @@ def submit():
     daily_data['date'] = request.form.get('day')
     daily_data['time'] = request.form.get('time')
     daily_data['value'] = request.form.get('level')
-    daily_data['meals'] = translator.translate(request.form.get('food'))
+        try:
+        daily_data['meals'] = translator.translate(request.form.get('food'))
+    except TypeError:
+        daily_data['meals'] = request.form.get('food')
     daily_data['grams'] = request.form.get('weight')
     daily_data['consumed'] = food_preferenses(session.get('login'), daily_data['meals'], daily_data['grams'], daily_data['date'])[1]
     diadram_xo(session.get('login'), daily_data['meals'], daily_data['grams'], daily_data['date'])
