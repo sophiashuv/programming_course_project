@@ -54,7 +54,7 @@ def submit():
     daily_data['date'] = request.form.get('day')
     daily_data['time'] = request.form.get('time')
     daily_data['value'] = request.form.get('level')
-        try:
+    try:
         daily_data['meals'] = translator.translate(request.form.get('food'))
     except TypeError:
         daily_data['meals'] = request.form.get('food')
