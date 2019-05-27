@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>flask_glucu package &#8212; Course project  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="flask-glucu-package">
+<h1>flask_glucu package<a class="headerlink" href="#flask-glucu-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-flask_glucu.add">
+<span id="flask-glucu-add-module"></span><h2>flask_glucu.add module<a class="headerlink" href="#module-flask_glucu.add" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="flask_glucu.add.add_user">
+<code class="descclassname">flask_glucu.add.</code><code class="descname">add_user</code><span class="sig-paren">(</span><em>a_dict</em><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.add.add_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>adds user to user.json</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.add.add_user_data">
+<code class="descclassname">flask_glucu.add.</code><code class="descname">add_user_data</code><span class="sig-paren">(</span><em>login</em>, <em>a_dict</em><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.add.add_user_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>adds data to login.json</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.add.creating_json">
+<code class="descclassname">flask_glucu.add.</code><code class="descname">creating_json</code><span class="sig-paren">(</span><em>login</em><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.add.creating_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>creates empty json</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.add.file_name">
+<code class="descclassname">flask_glucu.add.</code><code class="descname">file_name</code><span class="sig-paren">(</span><em>login</em><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.add.file_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a file name</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-flask_glucu.database_search">
+<span id="flask-glucu-database-search-module"></span><h2>flask_glucu.database_search module<a class="headerlink" href="#module-flask_glucu.database_search" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="flask_glucu.database_search.found_in_database">
+<code class="descclassname">flask_glucu.database_search.</code><code class="descname">found_in_database</code><span class="sig-paren">(</span><em>table_file</em>, <em>product</em><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.database_search.found_in_database" title="Permalink to this definition">¶</a></dt>
+<dd><p>(str,str)-&gt;dict
+Take file and name of product, find product description in file and return it.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.database_search.get_input">
+<code class="descclassname">flask_glucu.database_search.</code><code class="descname">get_input</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.database_search.get_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>(NoneType)-&gt; str
+Take user input and return it translated for futher research.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-flask_glucu.json_reading_writing">
+<span id="flask-glucu-json-reading-writing-module"></span><h2>flask_glucu.json_reading_writing module<a class="headerlink" href="#module-flask_glucu.json_reading_writing" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="flask_glucu.json_reading_writing.file_read">
+<code class="descclassname">flask_glucu.json_reading_writing.</code><code class="descname">file_read</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.json_reading_writing.file_read" title="Permalink to this definition">¶</a></dt>
+<dd><p>(str)-&gt;(list(dict))
+Reads file given and converts it to python dictionaries list</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.json_reading_writing.rewrite_json">
+<code class="descclassname">flask_glucu.json_reading_writing.</code><code class="descname">rewrite_json</code><span class="sig-paren">(</span><em>output_data</em>, <em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.json_reading_writing.rewrite_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tre function that rewrites json with user input</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-flask_glucu.main">
+<span id="flask-glucu-main-module"></span><h2>flask_glucu.main module<a class="headerlink" href="#module-flask_glucu.main" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="flask_glucu.main.check_login">
+<code class="descclassname">flask_glucu.main.</code><code class="descname">check_login</code><span class="sig-paren">(</span><em>login</em>, <em>password</em><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.main.check_login" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns all information about user</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.main.count_mid">
+<code class="descclassname">flask_glucu.main.</code><code class="descname">count_mid</code><span class="sig-paren">(</span><em>date</em>, <em>login</em><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.main.count_mid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns medium value of sugal level of a day</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.main.count_mid_week">
+<code class="descclassname">flask_glucu.main.</code><code class="descname">count_mid_week</code><span class="sig-paren">(</span><em>login</em><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.main.count_mid_week" title="Permalink to this definition">¶</a></dt>
+<dd><p>Counts medium level of sugar of a day and returns a list of medium levels of sugar for
+the last 7 days and list od dates</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.main.daily_diagram">
+<code class="descclassname">flask_glucu.main.</code><code class="descname">daily_diagram</code><span class="sig-paren">(</span><em>login</em><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.main.daily_diagram" title="Permalink to this definition">¶</a></dt>
+<dd><p>Builds a diagram of daily level of sugar</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.main.day">
+<code class="descclassname">flask_glucu.main.</code><code class="descname">day</code><span class="sig-paren">(</span><em>login</em><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.main.day" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns lists of heights and bars needed for a diagram and a day</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.main.diadram_xo">
+<code class="descclassname">flask_glucu.main.</code><code class="descname">diadram_xo</code><span class="sig-paren">(</span><em>login</em>, <em>product</em>, <em>food_amount</em>, <em>date</em><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.main.diadram_xo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Builds diagram for percentage of food consumed</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.main.food_preferenses">
+<code class="descclassname">flask_glucu.main.</code><code class="descname">food_preferenses</code><span class="sig-paren">(</span><em>login</em>, <em>product</em>, <em>food_amount</em>, <em>date</em><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.main.food_preferenses" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of doses of XO consumed and still available</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.main.insulin_dose">
+<code class="descclassname">flask_glucu.main.</code><code class="descname">insulin_dose</code><span class="sig-paren">(</span><em>login</em>, <em>sugar_level</em><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.main.insulin_dose" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns an ordinary insulin dose before a meal</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.main.insulin_dose_picture">
+<code class="descclassname">flask_glucu.main.</code><code class="descname">insulin_dose_picture</code><span class="sig-paren">(</span><em>login</em>, <em>sugar_level</em><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.main.insulin_dose_picture" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes a picture with a dose of insulin for user</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.main.search_user">
+<code class="descclassname">flask_glucu.main.</code><code class="descname">search_user</code><span class="sig-paren">(</span><em>login</em><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.main.search_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns all information about user</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.main.user_json">
+<code class="descclassname">flask_glucu.main.</code><code class="descname">user_json</code><span class="sig-paren">(</span><em>login</em><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.main.user_json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.main.weekly_diagram">
+<code class="descclassname">flask_glucu.main.</code><code class="descname">weekly_diagram</code><span class="sig-paren">(</span><em>login</em><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.main.weekly_diagram" title="Permalink to this definition">¶</a></dt>
+<dd><p>Builds a diagram of weekle sugar level values</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-flask_glucu.run">
+<span id="flask-glucu-run-module"></span><h2>flask_glucu.run module<a class="headerlink" href="#module-flask_glucu.run" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="flask_glucu.run.add_to_base">
+<code class="descclassname">flask_glucu.run.</code><code class="descname">add_to_base</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.run.add_to_base" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.run.back">
+<code class="descclassname">flask_glucu.run.</code><code class="descname">back</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.run.back" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.run.back_home">
+<code class="descclassname">flask_glucu.run.</code><code class="descname">back_home</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.run.back_home" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.run.contact">
+<code class="descclassname">flask_glucu.run.</code><code class="descname">contact</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.run.contact" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.run.help_page">
+<code class="descclassname">flask_glucu.run.</code><code class="descname">help_page</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.run.help_page" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.run.home">
+<code class="descclassname">flask_glucu.run.</code><code class="descname">home</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.run.home" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.run.logging">
+<code class="descclassname">flask_glucu.run.</code><code class="descname">logging</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.run.logging" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.run.my_page">
+<code class="descclassname">flask_glucu.run.</code><code class="descname">my_page</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.run.my_page" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.run.redirect">
+<code class="descclassname">flask_glucu.run.</code><code class="descname">redirect</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.run.redirect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.run.registration">
+<code class="descclassname">flask_glucu.run.</code><code class="descname">registration</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.run.registration" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.run.start_my_page">
+<code class="descclassname">flask_glucu.run.</code><code class="descname">start_my_page</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.run.start_my_page" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="flask_glucu.run.submit">
+<code class="descclassname">flask_glucu.run.</code><code class="descname">submit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flask_glucu.run.submit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-flask_glucu">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-flask_glucu" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Course project</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/flask_glucu.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

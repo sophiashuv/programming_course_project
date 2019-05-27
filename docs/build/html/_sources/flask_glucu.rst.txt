@@ -1,0 +1,54 @@
+flask\_glucu package
+====================
+
+Submodules
+----------
+
+flask\_glucu.add module
+-----------------------
+
+.. automodule:: flask_glucu.add
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+flask\_glucu.database\_search module
+------------------------------------
+
+.. automodule:: flask_glucu.database_search
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+flask\_glucu.json\_reading\_writing module
+------------------------------------------
+
+.. automodule:: flask_glucu.json_reading_writing
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+flask\_glucu.main module
+------------------------
+
+.. automodule:: flask_glucu.main
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+flask\_glucu.run module
+-----------------------
+
+.. automodule:: flask_glucu.run
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: flask_glucu
+    :members:
+    :undoc-members:
+    :show-inheritance:
